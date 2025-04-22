@@ -1,6 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import path from 'path';
+import { fileURLToPath } from 'url';
+import path, { dirname } from 'path';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = dirname(__filename);
 
 // Sample data
 const initialCustomers = [
